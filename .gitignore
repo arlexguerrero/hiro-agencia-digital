@@ -1,0 +1,8 @@
+# Ignorar directorios generados por IDEs o herramientas de construcción
+/build/
+/node_modules/
+
+# Ignorar archivos de configuración específicos del sistema operativo
+
+package-lock.json
+package.json
