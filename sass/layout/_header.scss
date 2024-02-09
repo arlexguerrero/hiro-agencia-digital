@@ -1,11 +1,16 @@
 header{
 background-color: aqua;
     .navbar-brand{
-        width: 100px;
+        display: flex;
+        align-items: center;
+        align-content: center;
+
+            width: 317px;
             display: block;
-            width: 300px;
+            
             img{
                 width: 100%;
+                vertical-align: baseline;
             }
        
     }
