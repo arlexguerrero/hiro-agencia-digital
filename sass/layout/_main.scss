@@ -1,0 +1,26 @@
+main{
+    .slider{
+        position: relative;
+       height: 100vh;
+        min-height: 100%;
+        background-color: black;
+        .owl-nav{
+            padding: 2rem;
+            position: absolute;
+            transform: translateY(50%);
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            // Personalizar el color del botón de navegación
+            .owl-prev,
+            .owl-next, span {
+                font-size: 5rem;
+                color: aliceblue;
+            }
+        }
+    }
+}
+
+   
+

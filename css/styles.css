@@ -1,27 +1,10 @@
 @charset "UTF-8";
-header {
-  background-color: aqua;
-}
-header .navbar-brand {
-  display: flex;
-  align-items: center;
-  align-content: center;
-  width: 317px;
-  display: block;
-}
-header .navbar-brand img {
-  width: 100%;
-  vertical-align: baseline;
-}
-header a {
-  display: block;
-}
-
 /*!
  * Bootstrap  v5.3.2 (https://getbootstrap.com/)
  * Copyright 2011-2023 The Bootstrap Authors
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+@import '../node_modules/owl.carousel/dist/assets/owl.carousel.min.css';
 :root,
 [data-bs-theme=light] {
   --bs-blue: #0d6efd;
@@ -11922,6 +11905,44 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
+}
+header {
+  background-color: aqua;
+}
+header .navbar-brand {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  width: 317px;
+  display: block;
+}
+header .navbar-brand img {
+  width: 100%;
+  vertical-align: baseline;
+}
+header a {
+  display: block;
+}
+
+main .slider {
+  position: relative;
+  height: 100vh;
+  min-height: 100%;
+  background-color: black;
+}
+main .slider .owl-nav {
+  padding: 2rem;
+  position: absolute;
+  transform: translateY(50%);
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+main .slider .owl-nav .owl-prev,
+main .slider .owl-nav .owl-next, main .slider .owl-nav span {
+  font-size: 5rem;
+  color: aliceblue;
 }
 
 /*# sourceMappingURL=styles.css.map */
