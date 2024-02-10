@@ -1,9 +1,12 @@
 main{
     .slider{
         position: relative;
-       height: 100vh;
+        height: 100vh;
         min-height: 100%;
         background-color: black;
+        img{
+            width: 100%;
+        }
         .owl-nav{
             padding: 2rem;
             position: absolute;
