@@ -1,9 +1,16 @@
+img{
+    width: 100%;
+    display: block;
+}
+section{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
 main{
     .slider{
         position: relative;
-        height: 100vh;
-        min-height: 100%;
-        background-color: black;
+        padding-top: 0px;
+        padding-bottom: 0px;
         img{
             width: 100%;
         }
@@ -23,7 +30,16 @@ main{
             }
         }
     }
+
+    .nosotros{
+    
+        
+      
+
+
+    }
+
+    .servicios{
+        background-color: #393939;
+    }
 }
-
-   
-

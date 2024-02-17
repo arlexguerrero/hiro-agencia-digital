@@ -2,4 +2,8 @@
 // layout
 @forward 'bootstrap';
 @forward 'layout/header';
-@forward 'layout/main';
+@import 'layout/main';
+
+// layout
+
+@import 'general/base';

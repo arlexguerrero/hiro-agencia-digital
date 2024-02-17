@@ -1,0 +1,33 @@
+img{
+    width: 100%;
+    display: block;
+}
+section{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+h1, h2, h3, h4, h5{
+    font-weight: 700;
+    display: inline;
+    
+}
+
+p{
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+
+.titulo-negro{
+    position: relative;
+    &::after{
+        content: "";
+        position: absolute;
+        height: 8px;
+        width: 100%;
+        top: 19px;
+        left: 0px;
+        z-index: -5;
+        background-color: #49A9F5;
+    }
+}
