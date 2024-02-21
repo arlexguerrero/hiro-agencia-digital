@@ -3,13 +3,14 @@ img{
     display: block;
 }
 section{
+    z-index: -100;
     padding-top: 3rem;
     padding-bottom: 3rem;
 }
 
 h1, h2, h3, h4, h5{
     font-weight: 700;
-    display: inline;
+    z-index: 3;
     
 }
 
@@ -18,16 +19,27 @@ p{
     font-size: 1.2rem;
 }
 
-.titulo-negro{
-    position: relative;
-    &::after{
-        content: "";
-        position: absolute;
-        height: 8px;
-        width: 100%;
-        top: 19px;
-        left: 0px;
-        z-index: -5;
-        background-color: #49A9F5;
-    }
+// .titulo-negro{
+//     position: relative;
+//     &::after{
+//         content: "";
+//         position: absolute;
+//         height: 8px;
+//         width: 100%;
+//         top: 19px;
+//         left: 0px;
+//         z-index: -1;
+//         background-color: #49A9F5;
+//     }
+// }
+
+//colores
+
+$white: #fff;
+
+
+
+
+.white-text {
+    color: $white;
 }

@@ -11958,6 +11958,20 @@ main .slider .owl-nav .owl-next, main .slider .owl-nav span {
 main .servicios {
   background-color: #393939;
 }
+main .servicios h4 {
+  text-align: center;
+}
+main .servicios__card-group {
+  display: flex;
+  flex-shrink: 1;
+  gap: 2rem;
+}
+main .servicios__card-group .card {
+  width: 30%;
+  background-color: transparent;
+  color: white;
+  border: none;
+}
 
 img {
   width: 100%;
@@ -11965,13 +11979,14 @@ img {
 }
 
 section {
+  z-index: -100;
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
 
 h1, h2, h3, h4, h5 {
   font-weight: 700;
-  display: inline;
+  z-index: 3;
 }
 
 p {
@@ -11979,18 +11994,8 @@ p {
   font-size: 1.2rem;
 }
 
-.titulo-negro {
-  position: relative;
-}
-.titulo-negro::after {
-  content: "";
-  position: absolute;
-  height: 8px;
-  width: 100%;
-  top: 19px;
-  left: 0px;
-  z-index: -5;
-  background-color: #49A9F5;
+.white-text {
+  color: #fff;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -33,13 +33,24 @@ main{
 
     .nosotros{
     
-        
-      
-
-
     }
 
     .servicios{
         background-color: #393939;
+        h4{
+            text-align: center;
+        }
+
+        &__card-group{
+            display: flex;
+            flex-shrink: 1;
+            gap: 2rem;
+           .card{
+                    width: 30%;
+                   background-color:  transparent;
+                   color: white;
+                   border: none;
+                }
+        }
     }
 }
