@@ -45,12 +45,29 @@ main{
             display: flex;
             flex-shrink: 1;
             gap: 2rem;
+            flex-wrap: wrap;
+            max-width: 100%;
+            
+
+            @media (max-width: 575.98px) { 
+                flex-wrap: nowrap;
+                overflow-x: auto;
+                padding-bottom: 2rem;
+             }
            .card{
                     width: 30%;
                    background-color:  transparent;
                    color: white;
                    border: none;
+                   flex-shrink: 0;
+                   display: flex;
+
+                   @media (max-width: 575.98px) { 
+                    width: 80%;
+                 }
                 }
+
+                
         }
     }
 }

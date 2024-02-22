@@ -11919,6 +11919,11 @@ header .navbar-brand img {
   width: 100%;
   vertical-align: baseline;
 }
+@media (max-width: 575.98px) {
+  header .navbar-brand {
+    width: 200px;
+  }
+}
 header a {
   display: block;
 }
@@ -11965,12 +11970,28 @@ main .servicios__card-group {
   display: flex;
   flex-shrink: 1;
   gap: 2rem;
+  flex-wrap: wrap;
+  max-width: 100%;
+}
+@media (max-width: 575.98px) {
+  main .servicios__card-group {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 2rem;
+  }
 }
 main .servicios__card-group .card {
   width: 30%;
   background-color: transparent;
   color: white;
   border: none;
+  flex-shrink: 0;
+  display: flex;
+}
+@media (max-width: 575.98px) {
+  main .servicios__card-group .card {
+    width: 80%;
+  }
 }
 
 footer {
