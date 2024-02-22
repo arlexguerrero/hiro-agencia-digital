@@ -11973,6 +11973,12 @@ main .servicios__card-group .card {
   border: none;
 }
 
+footer {
+  background-color: #393939;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
 img {
   width: 100%;
   display: block;
