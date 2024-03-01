@@ -1,17 +1,44 @@
 $(document).ready(function(){
-    $('.owl-carousel').owlCarousel({
+    $('.carousel1').owlCarousel({
         loop:true,
-        nav:true,
+        margin:10,
+        responsiveClass:true,
         responsive:{
             0:{
-                items:1
+                items:1,
+                nav:true
             },
             600:{
-                items:1
+                items:3,
+                nav:false
             },
             1000:{
-                items:1
+                items:1,
+                nav:true,
+                loop:true
             }
         }
     });
+
+    $('.carousel2').owlCarousel({
+        loop:true,
+        margin:1,
+        responsiveClass:true,
+        dots: true, // Activar los dots
+        responsive:{
+            0:{
+                items:1,
+                nav:true
+            },
+            600:{
+                items:3,
+                nav:false
+            },
+            1000:{
+                items:3,
+                nav:true,
+                loop:true
+            }
+        }
+    })
   });

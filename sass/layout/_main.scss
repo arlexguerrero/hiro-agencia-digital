@@ -8,17 +8,16 @@ section{
 }
 main{
     .slider{
-        position: relative;
         padding-top: 0px;
         padding-bottom: 0px;
         img{
-            width: 100%;
+        
         }
         .owl-nav{
             padding: 2rem;
             position: absolute;
             transform: translateY(50%);
-            top: 50%;
+            top: 30%;
             width: 100%;
             display: flex;
             justify-content: space-between;
@@ -68,6 +67,45 @@ main{
                 }
 
                 
+        }
+    }
+
+    .testimonios{
+       
+        .comentario{   
+            padding: 2rem;
+            border: 1px solid #D9D9D9;
+            border-radius: 16px;
+            width: 400px;
+            p{
+                margin-top: 4rem;
+                text-align: center;
+            }
+            .avatar{
+                position: absolute;
+                display: block;
+                height: 60px;
+                width: 60px;
+                top: 25px;
+                left: 36%;
+                z-index: 700;
+            }
+
+            
+        }
+        
+        .owl-nav{
+            width: 30%;
+            margin: 0 auto;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            // Personalizar el color del botón de navegación
+            .owl-prev,
+            .owl-next, span {
+                font-size: 5rem;
+                color: #49A9F5;
+            }
         }
     }
 }

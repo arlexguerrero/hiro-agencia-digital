@@ -11939,18 +11939,14 @@ section {
 }
 
 main .slider {
-  position: relative;
   padding-top: 0px;
   padding-bottom: 0px;
-}
-main .slider img {
-  width: 100%;
 }
 main .slider .owl-nav {
   padding: 2rem;
   position: absolute;
   transform: translateY(50%);
-  top: 50%;
+  top: 30%;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -11992,6 +11988,37 @@ main .servicios__card-group .card {
   main .servicios__card-group .card {
     width: 80%;
   }
+}
+main .testimonios .comentario {
+  padding: 2rem;
+  border: 1px solid #D9D9D9;
+  border-radius: 16px;
+  width: 400px;
+}
+main .testimonios .comentario p {
+  margin-top: 4rem;
+  text-align: center;
+}
+main .testimonios .comentario .avatar {
+  position: absolute;
+  display: block;
+  height: 60px;
+  width: 60px;
+  top: 25px;
+  left: 36%;
+  z-index: 700;
+}
+main .testimonios .owl-nav {
+  width: 30%;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+main .testimonios .owl-nav .owl-prev,
+main .testimonios .owl-nav .owl-next, main .testimonios .owl-nav span {
+  font-size: 5rem;
+  color: #49A9F5;
 }
 
 footer {
