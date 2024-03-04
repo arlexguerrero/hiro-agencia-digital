@@ -12050,6 +12050,7 @@ footer .footer__contacto ul {
   font-size: 20px;
   line-height: 40px;
   transition: opacity 0.3s, visibility 0.3s;
+  z-index: 900;
 }
 .back-to-top span {
   width: 100%;
