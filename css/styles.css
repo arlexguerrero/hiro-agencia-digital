@@ -11989,22 +11989,25 @@ main .servicios__card-group .card {
     width: 80%;
   }
 }
-main .testimonios .comentario {
+main .testimonios .item {
+  padding-top: 4rem;
+}
+main .testimonios .item .comentario {
   padding: 2rem;
   border: 1px solid #D9D9D9;
   border-radius: 16px;
   width: 400px;
 }
-main .testimonios .comentario p {
-  margin-top: 4rem;
+main .testimonios .item .comentario p {
+  margin-top: 3rem;
   text-align: center;
 }
-main .testimonios .comentario .avatar {
+main .testimonios .item .comentario .avatar {
   position: absolute;
   display: block;
   height: 60px;
-  width: 60px;
-  top: 25px;
+  width: 90px;
+  top: 16px;
   left: 36%;
   z-index: 700;
 }
@@ -12018,13 +12021,77 @@ main .testimonios .owl-nav {
 main .testimonios .owl-nav .owl-prev,
 main .testimonios .owl-nav .owl-next, main .testimonios .owl-nav span {
   font-size: 5rem;
+  line-height: 1;
   color: #49A9F5;
 }
 
 footer {
   background-color: #393939;
   padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-bottom: 0.5rem;
+  color: #fff;
+}
+footer .footer__contacto ul {
+  padding-left: 0;
+  list-style: none;
+}
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  width: 80px;
+  height: 80px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #49A9F5;
+  text-align: center;
+  font-size: 20px;
+  line-height: 40px;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+.back-to-top span {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.back-to-top span img {
+  width: 50%;
+}
+
+.back-to-top:hover {
+  background-color: #49A9F5;
+}
+
+.whatsapp-button {
+  position: fixed;
+  border-radius: 50%;
+  bottom: 120px;
+  right: 20px;
+  width: 80px;
+  height: 80px;
+  background-color: #49A9F5;
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+.whatsapp-button span {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.whatsapp-button span img {
+  width: 50%;
+}
+
+.whatsapp-button:hover {
+  background-color: #49A9F5;
 }
 
 img {
@@ -12041,11 +12108,25 @@ section {
 h1, h2, h3, h4, h5 {
   font-weight: 700;
   z-index: 3;
+  width: fit-content;
 }
 
 p {
-  margin-top: 1rem;
   font-size: 1.2rem;
+}
+
+.titulo-negro {
+  position: relative;
+}
+.titulo-negro::after {
+  content: "";
+  position: absolute;
+  height: 8px;
+  width: 100%;
+  top: 19px;
+  left: 0px;
+  z-index: -1;
+  background-color: #49A9F5;
 }
 
 .white-text {

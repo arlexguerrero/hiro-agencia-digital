@@ -10,9 +10,7 @@ main{
     .slider{
         padding-top: 0px;
         padding-bottom: 0px;
-        img{
         
-        }
         .owl-nav{
             padding: 2rem;
             position: absolute;
@@ -30,9 +28,6 @@ main{
         }
     }
 
-    .nosotros{
-    
-    }
 
     .servicios{
         background-color: #393939;
@@ -71,25 +66,29 @@ main{
     }
 
     .testimonios{
+        .item{
+            padding-top: 4rem;
+
+            .comentario{   
+                padding: 2rem;
+                border: 1px solid #D9D9D9;
+                border-radius: 16px;
+                width: 400px;
+                p{
+                    margin-top: 3rem;
+                    text-align: center;
+                }
+                .avatar{
+                    position: absolute;
+                    display: block;
+                    height: 60px;
+                    width: 90px;
+                    top: 16px;
+                    left: 36%;
+                    z-index: 700;
+                }
+        }
        
-        .comentario{   
-            padding: 2rem;
-            border: 1px solid #D9D9D9;
-            border-radius: 16px;
-            width: 400px;
-            p{
-                margin-top: 4rem;
-                text-align: center;
-            }
-            .avatar{
-                position: absolute;
-                display: block;
-                height: 60px;
-                width: 60px;
-                top: 25px;
-                left: 36%;
-                z-index: 700;
-            }
 
             
         }
@@ -104,6 +103,7 @@ main{
             .owl-prev,
             .owl-next, span {
                 font-size: 5rem;
+                line-height: 1;
                 color: #49A9F5;
             }
         }

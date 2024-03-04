@@ -1,9 +1,12 @@
 
+
+
 // layout
+
 @forward 'bootstrap';
 @forward 'layout/header';
-@import 'layout/main';
-@import 'layout/footer';
+@forward 'layout/main';
+@forward 'layout/footer';
 // General
 
-@import 'general/base';
+@import 'global/base';
