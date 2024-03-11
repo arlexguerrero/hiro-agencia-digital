@@ -1,6 +1,8 @@
 header{
     background-color: aqua;
+    position: relative;
     .navbar-brand{
+        
         display: flex;
         align-items: center;
         align-content: center;
@@ -16,11 +18,15 @@ header{
             width: 200px;
          }
 
-       
     }
     a{
        display: block;
-       
+    }
+   
+    nav{
+        .dropdown-menu{
+            border: none;
+        }
     }
    
 }

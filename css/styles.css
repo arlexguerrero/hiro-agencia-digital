@@ -11907,6 +11907,7 @@ textarea.form-control-lg {
 }
 header {
   background-color: aqua;
+  position: relative;
 }
 header .navbar-brand {
   display: flex;
@@ -11926,6 +11927,9 @@ header .navbar-brand img {
 }
 header a {
   display: block;
+}
+header nav .dropdown-menu {
+  border: none;
 }
 
 img {
