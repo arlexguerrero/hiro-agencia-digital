@@ -7,6 +7,7 @@ section{
     padding-bottom: 3rem;
 }
 main{
+    
     .slider{
         padding-top: 0px;
         padding-bottom: 0px;
@@ -108,4 +109,14 @@ main{
             }
         }
     }
+}
+
+.nosotros{
+    
+    &-banner{
+        padding-top: 0px !important;
+    
+    }
+    
+    
 }
