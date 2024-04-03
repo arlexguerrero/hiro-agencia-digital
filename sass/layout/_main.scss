@@ -1,11 +1,4 @@
-img{
-    width: 100%;
-    display: block;
-}
-section{
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-}
+
 main{
     
     .slider{
@@ -29,6 +22,9 @@ main{
         }
     }
 
+    /*=========
+        home
+    ===========*/
 
     .servicios{
         background-color: #393939;
@@ -109,14 +105,28 @@ main{
             }
         }
     }
+  /*=========
+       pg nosotros
+    ===========*/
+
+
+    .nosotros{
+    
+        &-banner{
+            padding-top: 0px !important;
+        
+        }
+        
+        
+    }
+
+     /*=========
+       pgs Servicios
+    ===========*/
+
+    
+
+    
 }
 
-.nosotros{
-    
-    &-banner{
-        padding-top: 0px !important;
-    
-    }
-    
-    
-}
+

@@ -11932,16 +11932,17 @@ header nav .dropdown-menu {
   border: none;
 }
 
-img {
-  width: 100%;
-  display: block;
+main {
+  /*=========
+      home
+  ===========*/
+  /*=========
+       pg nosotros
+    ===========*/
+  /*=========
+     pgs Servicios
+  ===========*/
 }
-
-section {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-
 main .slider {
   padding-top: 0px;
   padding-bottom: 0px;
@@ -12028,8 +12029,7 @@ main .testimonios .owl-nav .owl-next, main .testimonios .owl-nav span {
   line-height: 1;
   color: #49A9F5;
 }
-
-.nosotros-banner {
+main .nosotros-banner {
   padding-top: 0px !important;
 }
 
@@ -12037,6 +12037,7 @@ footer {
   padding-top: 3rem;
   padding-bottom: 0.5rem;
   color: #fff;
+  border-top: 1px solid white;
 }
 footer .footer__contacto ul {
   padding-left: 0;
@@ -12128,6 +12129,21 @@ p {
   position: relative;
 }
 .titulo-negro::after {
+  content: "";
+  position: absolute;
+  height: 8px;
+  width: 100%;
+  top: 19px;
+  left: 0px;
+  z-index: -1;
+  background-color: #49A9F5;
+}
+
+.titulo-blanco {
+  position: relative;
+  color: #fff;
+}
+.titulo-blanco::after {
   content: "";
   position: absolute;
   height: 8px;

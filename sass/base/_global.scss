@@ -8,6 +8,8 @@ section{
     padding-bottom: 3rem;
 }
 
+
+
 h1, h2, h3, h4, h5{
     font-weight: 700;
     z-index: 3;
@@ -33,6 +35,22 @@ p{
         background-color: #49A9F5;
     }
 }
+
+.titulo-blanco{
+    position: relative;
+    color:#fff;
+    &::after{
+        content: "";
+        position: absolute;
+        height: 8px;
+        width: 100%;
+        top: 19px;
+        left: 0px;
+        z-index: -1;
+        background-color: #49A9F5;
+    }
+}
+
 
 //colores
 
