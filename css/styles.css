@@ -12032,6 +12032,61 @@ main .testimonios .owl-nav .owl-next, main .testimonios .owl-nav span {
 main .nosotros-banner {
   padding-top: 0px !important;
 }
+main .paquetes {
+  background: #003E72;
+  background: radial-gradient(at center -20%, #003E72, #000F1B);
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+main .paquetes .card {
+  background-color: white;
+  border: none;
+  box-shadow: 0px 7px 6px 1px rgba(0, 0, 0, 0.57);
+}
+main .paquetes .card-header {
+  background: radial-gradient(at center 170%, #003E72, #000F1B);
+  background-position: center top;
+  background-repeat: no-repeat;
+  border: inset 1px B6B6B6;
+  color: #BCC900;
+  border: none;
+}
+main .paquetes .card-body p {
+  font-size: 1.2rem;
+  color: #535353;
+  line-height: 1.2;
+  min-height: 100%;
+}
+main .paquetes .card-body strong {
+  color: #BCC900;
+}
+main .paquetes .card-body ul {
+  padding-left: 1rem;
+  list-style-type: none;
+}
+main .paquetes .card-body ul li {
+  padding-left: 1.5rem;
+  background-image: url(../img/check.svg);
+  background-position: 2px 7px;
+  background-size: 1rem 1rem;
+  background-repeat: no-repeat;
+}
+main .paquetes .card-footer {
+  background-color: white;
+  border-top: none;
+}
+main .paquetes .card-footer .btn-card-footer {
+  width: 100%;
+  background-color: #BCC900;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-radius: 2.5rem;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
 
 footer {
   padding-top: 3rem;
@@ -12082,7 +12137,7 @@ footer .footer__contacto ul {
   right: 20px;
   width: 65px;
   height: 65px;
-  background-color: #49A9F5;
+  background-color: #25d366;
   color: #fff;
   font-size: 16px;
   text-decoration: none;
@@ -12101,7 +12156,7 @@ footer .footer__contacto ul {
 }
 
 .whatsapp-button:hover {
-  background-color: #49A9F5;
+  background-color: #128c7e;
 }
 
 img {
@@ -12141,21 +12196,23 @@ p {
 
 .titulo-blanco {
   position: relative;
-  color: #fff;
+  color: white;
+  padding-left: 3px;
+  padding-right: 3px;
 }
 .titulo-blanco::after {
   content: "";
   position: absolute;
   height: 8px;
   width: 100%;
-  top: 19px;
+  top: 20px;
   left: 0px;
   z-index: -1;
-  background-color: #49A9F5;
+  background-color: #BCC900;
 }
 
 .white-text {
-  color: #fff;
+  color: white;
 }
 
 .alto {

@@ -38,29 +38,32 @@ p{
 
 .titulo-blanco{
     position: relative;
-    color:#fff;
+    color: white;
+    padding-left: 3px;
+    padding-right: 3px;
     &::after{
         content: "";
         position: absolute;
         height: 8px;
         width: 100%;
-        top: 19px;
+        top: 20px;
         left: 0px;
         z-index: -1;
-        background-color: #49A9F5;
+        background-color: #BCC900;
+
     }
 }
 
 
 //colores
 
-$white: #fff;
+
 
 
 
 
 .white-text {
-    color: $white;
+    color: white;
 }
 .alto{
         

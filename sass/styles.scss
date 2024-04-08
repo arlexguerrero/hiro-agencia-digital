@@ -1,12 +1,13 @@
-
-
+//Bootstrap
+@forward 'bootstrap';
 
 // layout
 
-@forward 'bootstrap';
 @forward 'layout/header';
 @forward 'layout/main';
 @forward 'layout/footer';
-// General
 
-@import 'base/global';
+
+// General
+@forward 'base/colores';
+@forward 'base/global';
