@@ -1,6 +1,6 @@
 
 main{
-    
+}  
     .slider{
         padding-top: 0px;
         padding-bottom: 0px;
@@ -190,7 +190,61 @@ main{
         }
     }
 
+    .contacto{
+        padding: 0px;
+        min-height: 80vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background: radial-gradient(at center -20%, #003E72, #000F1B);
+        justify-content: center;
+        
+        &-formulario{
+            padding: 0;
+            background-color: #fff;
+            z-index: 200;
+            border-radius: 16px;
+            display: grid;
+        }
+
+        &-formulario-layout{
+            grid-template-columns: repeat(12, 1fr);
+            display: grid;
+            gap: 1rem;
+            max-width: 1396px;
+
+            &__datos{
+                background-image: url(../img/imagen-contacto.png);
+                background-size: 100%;
+                background-repeat: no-repeat;
+                grid-column: 1 / 5; 
+                color: #fff;
+                height: 100%;
+                max-height: 676px;
+                padding-top: 80%;
+                padding-left: 1rem;
+                padding-right: 1rem;
+                padding-bottom: 20%;
+
+                p{
+                    margin-bottom: 0px;
+                }
+             }
+
+             &__form{
+                grid-column: 5  / -1; 
+                padding-right: 2rem;
+                padding-left: 1rem;
+                padding-top: 3rem;
+
+                h1{
+                    text-align: center;
+                }
+             }
+        }
+    }
+
     
-}
+
 
 

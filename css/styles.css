@@ -11932,22 +11932,11 @@ header nav .dropdown-menu {
   border: none;
 }
 
-main {
-  /*=========
-      home
-  ===========*/
-  /*=========
-       pg nosotros
-    ===========*/
-  /*=========
-     pgs Servicios
-  ===========*/
-}
-main .slider {
+.slider {
   padding-top: 0px;
   padding-bottom: 0px;
 }
-main .slider .owl-nav {
+.slider .owl-nav {
   padding: 2rem;
   position: absolute;
   transform: translateY(50%);
@@ -11956,18 +11945,22 @@ main .slider .owl-nav {
   display: flex;
   justify-content: space-between;
 }
-main .slider .owl-nav .owl-prev,
-main .slider .owl-nav .owl-next, main .slider .owl-nav span {
+.slider .owl-nav .owl-prev,
+.slider .owl-nav .owl-next, .slider .owl-nav span {
   font-size: 5rem;
   color: aliceblue;
 }
-main .servicios {
+
+/*=========
+    home
+===========*/
+.servicios {
   background-color: #393939;
 }
-main .servicios h4 {
+.servicios h4 {
   text-align: center;
 }
-main .servicios__card-group {
+.servicios__card-group {
   display: flex;
   flex-shrink: 1;
   gap: 2rem;
@@ -11975,13 +11968,13 @@ main .servicios__card-group {
   max-width: 100%;
 }
 @media (max-width: 575.98px) {
-  main .servicios__card-group {
+  .servicios__card-group {
     flex-wrap: nowrap;
     overflow-x: auto;
     padding-bottom: 2rem;
   }
 }
-main .servicios__card-group .card {
+.servicios__card-group .card {
   width: 30%;
   background-color: transparent;
   color: white;
@@ -11990,24 +11983,25 @@ main .servicios__card-group .card {
   display: flex;
 }
 @media (max-width: 575.98px) {
-  main .servicios__card-group .card {
+  .servicios__card-group .card {
     width: 80%;
   }
 }
-main .testimonios .item {
+
+.testimonios .item {
   padding-top: 4rem;
 }
-main .testimonios .item .comentario {
+.testimonios .item .comentario {
   padding: 2rem;
   border: 1px solid #D9D9D9;
   border-radius: 16px;
   width: 400px;
 }
-main .testimonios .item .comentario p {
+.testimonios .item .comentario p {
   margin-top: 3rem;
   text-align: center;
 }
-main .testimonios .item .comentario .avatar {
+.testimonios .item .comentario .avatar {
   position: absolute;
   display: block;
   height: 60px;
@@ -12016,34 +12010,42 @@ main .testimonios .item .comentario .avatar {
   left: 36%;
   z-index: 700;
 }
-main .testimonios .owl-nav {
+.testimonios .owl-nav {
   width: 30%;
   margin: 0 auto;
   text-align: center;
   display: flex;
   justify-content: space-between;
 }
-main .testimonios .owl-nav .owl-prev,
-main .testimonios .owl-nav .owl-next, main .testimonios .owl-nav span {
+.testimonios .owl-nav .owl-prev,
+.testimonios .owl-nav .owl-next, .testimonios .owl-nav span {
   font-size: 5rem;
   line-height: 1;
   color: #49A9F5;
 }
-main .nosotros-banner {
+
+/*=========
+     pg nosotros
+  ===========*/
+.nosotros-banner {
   padding-top: 0px !important;
 }
-main .paquetes {
+
+/*=========
+   pgs Servicios
+===========*/
+.paquetes {
   background: #003E72;
   background: radial-gradient(at center -20%, #003E72, #000F1B);
   background-position: center top;
   background-repeat: no-repeat;
 }
-main .paquetes .card {
+.paquetes .card {
   background-color: white;
   border: none;
   box-shadow: 0px 7px 6px 1px rgba(0, 0, 0, 0.57);
 }
-main .paquetes .card-header {
+.paquetes .card-header {
   background: radial-gradient(at center 170%, #003E72, #000F1B);
   background-position: center top;
   background-repeat: no-repeat;
@@ -12051,31 +12053,31 @@ main .paquetes .card-header {
   color: #BCC900;
   border: none;
 }
-main .paquetes .card-body p {
+.paquetes .card-body p {
   font-size: 1.2rem;
   color: #535353;
   line-height: 1.2;
   min-height: 100%;
 }
-main .paquetes .card-body strong {
+.paquetes .card-body strong {
   color: #BCC900;
 }
-main .paquetes .card-body ul {
+.paquetes .card-body ul {
   padding-left: 1rem;
   list-style-type: none;
 }
-main .paquetes .card-body ul li {
+.paquetes .card-body ul li {
   padding-left: 1.5rem;
   background-image: url(../img/check.svg);
   background-position: 2px 7px;
   background-size: 1rem 1rem;
   background-repeat: no-repeat;
 }
-main .paquetes .card-footer {
+.paquetes .card-footer {
   background-color: white;
   border-top: none;
 }
-main .paquetes .card-footer .btn-card-footer {
+.paquetes .card-footer .btn-card-footer {
   width: 100%;
   background-color: #BCC900;
   padding-top: 0.5rem;
@@ -12086,6 +12088,54 @@ main .paquetes .card-footer .btn-card-footer {
   color: #fff;
   font-weight: 700;
   font-size: 1.5rem;
+}
+
+.contacto {
+  padding: 0px;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: radial-gradient(at center -20%, #003E72, #000F1B);
+  justify-content: center;
+}
+.contacto-formulario {
+  padding: 0;
+  background-color: #fff;
+  z-index: 200;
+  border-radius: 16px;
+  display: grid;
+}
+.contacto-formulario-layout {
+  grid-template-columns: repeat(12, 1fr);
+  display: grid;
+  gap: 1rem;
+  max-width: 1396px;
+}
+.contacto-formulario-layout__datos {
+  background-image: url(../img/imagen-contacto.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  grid-column: 1/5;
+  color: #fff;
+  height: 100%;
+  max-height: 676px;
+  padding-top: 80%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 20%;
+}
+.contacto-formulario-layout__datos p {
+  margin-bottom: 0px;
+}
+.contacto-formulario-layout__form {
+  grid-column: 5/-1;
+  padding-right: 2rem;
+  padding-left: 1rem;
+  padding-top: 3rem;
+}
+.contacto-formulario-layout__form h1 {
+  text-align: center;
 }
 
 footer {
