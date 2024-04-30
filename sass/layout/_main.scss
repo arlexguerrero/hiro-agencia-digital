@@ -1,26 +1,7 @@
 
 main{
 }  
-    .slider{
-        padding-top: 0px;
-        padding-bottom: 0px;
-        
-        .owl-nav{
-            padding: 2rem;
-            position: absolute;
-            transform: translateY(50%);
-            top: 30%;
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            // Personalizar el color del botón de navegación
-            .owl-prev,
-            .owl-next, span {
-                font-size: 5rem;
-                color: aliceblue;
-            }
-        }
-    }
+ 
 
     /*=========
         home
@@ -89,22 +70,10 @@ main{
 
             
         }
-        
-        .owl-nav{
-            width: 30%;
-            margin: 0 auto;
-            text-align: center;
-            display: flex;
-            justify-content: space-between;
-            // Personalizar el color del botón de navegación
-            .owl-prev,
-            .owl-next, span {
-                font-size: 5rem;
-                line-height: 1;
-                color: #49A9F5;
-            }
-        }
+
     }
+
+
   /*=========
        pg nosotros
     ===========*/
@@ -189,6 +158,112 @@ main{
             } 
         }
     }
+
+  /*=========
+       Proyectos
+    ===========*/
+
+    .proyectos{
+
+        .proyectos-grid{
+            background: radial-gradient(at center -20%, #003E72, #000F1B);
+        }
+
+        .tab-section {
+            max-width: 100%;
+            margin: 0 auto;
+          }
+          
+          .tab-buttons {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+            padding: 10px 4px;
+          }
+          
+          .tab-btn {
+           background-color: transparent;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 10px 20px;
+            color: #fff;
+            transition: background-color 0.3s ease;
+            
+          }
+          
+          .tab-btn.active {
+            color: #BCC900;
+            
+          }
+          
+          .tab-content {
+            padding-bottom: 2.2rem;
+            
+            .item{
+                position: relative;
+                &-overlay{
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    background: rgba(0, 0, 0, .9);
+                    cursor: pointer;
+                    &__description{
+                        position: relative;
+                        bottom: 0px;
+                        height: 100%;
+                        width: 100;
+                        
+
+                        &-content{
+                            position: absolute;
+                            width: 100%;
+                            bottom: 0px;
+                            left: 0px;
+                            padding: 1rem;
+                            h4{
+                                color: #E04949;
+                                font-size: 1.5rem;
+                            }
+                            ul{
+                                list-style: none;
+                                padding: 0px;
+                                margin: 0px;
+                                li{
+                                    color: #fff;
+                                    font-size: 1rem;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &-overlay:hover{
+                    background: rgba(0, 0, 0, .5);
+                    transition: background-color 0.3s ease;
+                }
+
+
+
+            }
+          }
+          
+          .tab-pane {
+            display: none;
+          }
+          
+          .tab-pane.active {
+            display: block;
+            
+          }
+    }
+
+   
+      
+     /*=========
+       Contacto
+    ===========*/
 
     .contacto{
         padding: 0px;
