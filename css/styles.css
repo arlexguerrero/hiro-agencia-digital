@@ -11948,7 +11948,7 @@ textarea.form-control-lg {
   position: relative;
 }
 .testimonios .owl-carousel .owl-nav {
-  width: 148px;
+  width: 160px;
   margin: 0 auto;
   text-align: center;
   display: flex;
@@ -11964,13 +11964,17 @@ textarea.form-control-lg {
   position: absolute;
   text-align: center;
   margin: 0 auto;
-  bottom: 13px;
-  width: 100%;
+  bottom: 17px;
+  width: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translate(-50%, 0%);
+  left: 50%;
 }
 .testimonios .owl-carousel .owl-dots span {
   width: 20px;
   height: 20px;
-  margin: 5px 7px;
   background: #000F1B;
 }
 .testimonios .owl-carousel .owl-dots .owl-dot {
@@ -12061,13 +12065,17 @@ header nav .dropdown-menu {
 /*=========
     home
 ===========*/
-.servicios {
-  background-color: #393939;
+.home {
+  background-color: #171819;
+  background: radial-gradient(at center -20%, #003E72, #000F1B);
 }
-.servicios h4 {
+.home .nosotros {
+  color: #fff;
+}
+.home .servicios h4 {
   text-align: center;
 }
-.servicios__card-group {
+.home .servicios__card-group {
   display: flex;
   flex-shrink: 1;
   gap: 2rem;
@@ -12075,13 +12083,13 @@ header nav .dropdown-menu {
   max-width: 100%;
 }
 @media (max-width: 575.98px) {
-  .servicios__card-group {
+  .home .servicios__card-group {
     flex-wrap: nowrap;
     overflow-x: auto;
     padding-bottom: 2rem;
   }
 }
-.servicios__card-group .card {
+.home .servicios__card-group .card {
   width: 30%;
   background-color: transparent;
   color: white;
@@ -12090,25 +12098,29 @@ header nav .dropdown-menu {
   display: flex;
 }
 @media (max-width: 575.98px) {
-  .servicios__card-group .card {
+  .home .servicios__card-group .card {
     width: 80%;
   }
 }
-
-.testimonios .item {
+.home .testimonios {
+  color: #fff;
+}
+.home .testimonios .item {
   padding-top: 4rem;
 }
-.testimonios .item .comentario {
+.home .testimonios .item .comentario {
   padding: 2rem;
   border: 1px solid #D9D9D9;
   border-radius: 16px;
   width: 400px;
+  background-color: #fff;
 }
-.testimonios .item .comentario p {
+.home .testimonios .item .comentario p {
   margin-top: 3rem;
   text-align: center;
+  color: #171819;
 }
-.testimonios .item .comentario .avatar {
+.home .testimonios .item .comentario .avatar {
   position: absolute;
   display: block;
   height: 60px;
@@ -12185,8 +12197,8 @@ header nav .dropdown-menu {
 }
 
 /*=========
-     Proyectos
-  ===========*/
+       Proyectos
+    ===========*/
 .proyectos .proyectos-grid {
   background: radial-gradient(at center -20%, #003E72, #000F1B);
 }
@@ -12264,7 +12276,7 @@ header nav .dropdown-menu {
 }
 
 /*=========
-   Contacto
+    Contacto
 ===========*/
 .contacto {
   padding: 0px;
@@ -12416,6 +12428,16 @@ footer .footer__contacto ul {
   padding-left: 0;
   list-style: none;
 }
+footer .footer__redes ul {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+footer .footer__redes ul li a img {
+  height: 35px;
+  fill: #BCC900;
+}
+
 .back-to-top {
   position: fixed;
   bottom: 20px;

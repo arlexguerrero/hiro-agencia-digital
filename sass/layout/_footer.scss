@@ -5,12 +5,28 @@ footer{
     color: #fff;
     border-top: 1px solid #BCC900;
     .footer__contacto {
-
         ul{
             padding-left: 0;
             list-style: none;
             li{
                 
+            }
+        }
+    }
+
+    .footer__redes{
+        ul{
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            
+            li{
+                a{
+                    img{
+                        height: 35px;
+                        fill: #BCC900;
+                    }
+                }
             }
         }
     }
