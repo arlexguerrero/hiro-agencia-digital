@@ -20,8 +20,8 @@
 </script>
 </head>
 <body>
-  <header>
-    <nav class="navbar navbar-expand-lg bg-dark sticky-top ps-xl-4 pe-xl-4" data-bs-theme="dark">
+  <header class="position-relative">
+    <nav class="navbar  top-0 navbar-expand-lg bg-dark sticky-top ps-xl-4 pe-xl-4" data-bs-theme="dark">
         <div class="container-fluid ">
             <a class="navbar-brand align-items-center d-flex" href="index.html">
               <img src="img/hiro-logo-header.svg" alt="">
@@ -66,16 +66,33 @@
 <!--slider-->
   <section class="slider" id="slide">
     <div class="owl-carousel carousel1">
-      
+      <div class="item">
+        <picture>
+          <source media="(min-width: 768px)" srcset="img/banner-ppal-tab.jpg">
+          <!-- Define la imagen para pantallas con una resolución de 600px o más -->
+          <source media="(min-width: 990px)" srcset="img/banner-ppal.jpg">
+          <!-- Define la imagen para pantallas con una resolución de menos de 600px -->
+          <img src="img/banner-ppal-mob.png" alt="Descripción de la imagen">
+        </picture>
+      </div>
+      <div class="item">
+        <picture>
+          <source media="(min-width: 768px)" srcset="img/banner-ppal-tab.jpg">
+          <!-- Define la imagen para pantallas con una resolución de 600px o más -->
+          <source media="(min-width: 990px)" srcset="img/banner-ppal.jpg">
+          <!-- Define la imagen para pantallas con una resolución de menos de 600px -->
+          <img src="img/banner-ppal-mob.png" alt="Descripción de la imagen">
+        </picture>
+      </div>
     </div>
   </section>
   <section class="nosotros" id="nosotros">
     <div class="container">
       <div class="row justify-content-center align-items-center">
         <div class="col-xs-12 col-md-5 push-1">
-          <h4 class="titulo-blanco">Descubre el Poder del Éxito Digital</h4>
-          
+          <h2 class="titulo-blanco">Descubre el Poder del Éxito Digital</h2>
           <p>Bienvenido a <strong>HIRO Agencia Digital</strong>, donde transformamos ideas en impacto digital. Con un enfoque innovador y un equipo apasionado, ofrecemos soluciones integrales de marketing digital y desarrollo web.</p>
+          <span class="divider"></span>
         </div>
         <div class="col-1 d-md-none d-xl-block "></div>
         <div class="col-xs-12 col-md-4">
@@ -86,7 +103,10 @@
   </section>
   <section class="servicios">
     <div class="container">
-      <h4 class="titulo-blanco white-text pb-md-4">Nuestros Servicios</h4>
+      <div class="servicios-titulo">
+        <h3 class="titulo-blanco white-text pb-md-4">Nuestros Servicios</h3>
+        <p>Ideales para cada tipo de negocio, empresa o emprendimiento</p>
+      </div>
       <div class="servicios__card-group pb-xs-6">
         <div class="card ">
           <img src="img/servicios-diseno-web.png" class="card-img-top" alt="...">
@@ -117,7 +137,10 @@
   </section>
   <section class="testimonios" id="testimonios">
     <div class="container">
-      <h4 class="titulo-negro text-center pb-md-4">Testimonios de exito</h4>
+      <div class="servicios-titulo">
+        <h3 class="titulo-blanco white-text pb-md-4">Casos de exito</h3>
+        <p>Algunos de nuestros casos de exito que han sido realizados con nosotros</p>
+      </div>
      <!-- Set up your HTML -->
     
       <div class="owl-carousel carousel2">

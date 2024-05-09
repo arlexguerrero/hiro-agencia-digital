@@ -25,9 +25,9 @@ $(document).ready(function(){
 
     $('.carousel2').owlCarousel({
         loop:true,
-        margin:1,
+        margin:20,
         dots: true,
-        responsiveClass:true,
+        autoWidth:true,
         autoplay:true,
         autoplayTimeout:4500,
         autoplayHoverPause: true,
