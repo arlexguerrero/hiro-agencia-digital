@@ -57,27 +57,60 @@
                 gap: 2rem;
                 flex-wrap: wrap;
                 max-width: 100%;
+                justify-content:  center;
                 
     
                 @media (max-width: 575.98px) { 
                     flex-wrap: nowrap;
                     overflow-x: auto;
                     padding-bottom: 2rem;
+                    justify-content: flex-start;
                  }
                .card{
-                        width: 30%;
+                       width: 30%;
                        background-color:  transparent;
                        color: white;
                        border: none;
                        flex-shrink: 0;
                        display: flex;
-    
-                       @media (max-width: 575.98px) { 
+                       gap: .8rem;
+                       flex-direction: column;
+                       min-height: 100%;
+                   
+                   
+
+                     @media (max-width: 767px) { 
+                        width: 46%;
+                     }
+                     @media (max-width: 575.98px) { 
+                        width: 35%;
+                     }
+
+                     @media (max-width: 419px) { 
                         width: 80%;
                      }
-                    }
     
-                    
+                     .card-img-top{
+                        border-radius: 0px;
+                     }
+                     &-body{
+                        text-align: start;
+                        padding: 0;
+
+
+                        h5{
+                            color: #49A9F5;
+                        }
+                       
+                     }
+
+                     a{
+                        color: #fff;
+                        border-radius: 0;
+                        font-weight: 700;
+                    }
+
+                    }
             }
         }
     
@@ -91,17 +124,26 @@
                 background-size: 100%;
                 background-repeat: no-repeat;
                 padding: 2rem 3rem;
+
+                @media screen and (max-width: 767px) {
+                    padding: 2rem 1rem;
+                }
             }
 
             .item{
                 padding-top: 4rem;
-    
+                width: fit-content;
                 .comentario{   
                     padding: 2rem;
                     border: 1px solid #D9D9D9;
                     border-radius: 16px;
-                    width: 380px;
+                    max-width: 380px;
+                    width: 100%;
                     background-color: #fff;
+
+                    @media screen and (max-width: 767px) {
+                        max-width: 240px;
+                    }
                     p{
                         margin-top: 3rem;
                         text-align: center;
@@ -134,7 +176,13 @@
     ===========*/
 
     .nosotros{
-    
+        background-color: #020205;
+        color: #fff;
+
+        h3{
+            color: #49A9F5;
+        }
+
         &-banner{
             padding-top: 0px !important;
         

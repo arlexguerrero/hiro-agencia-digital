@@ -77,6 +77,11 @@
             transform: translate(-50%, 0%);
             left: 50%;
 
+            @media screen and (max-width: 768px) {
+                bottom: -5px;
+                width: 50%;
+            }
+
           }
     
           .owl-dots span {

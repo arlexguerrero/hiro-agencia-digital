@@ -23,18 +23,16 @@ p{
     font-weight: 100;
 }
 
+.divider{
+    background-color: #49A9F5;
+    height: 3px;
+    width: 100px;
+    display: block;
+}
+
 .titulo-negro{
     position: relative;
-    &::after{
-        content: "";
-        position: absolute;
-        height: 8px;
-        width: 100%;
-        top: 19px;
-        left: 0px;
-        z-index: -1;
-        background-color: #49A9F5;
-    }
+   
 }
 
 .titulo-blanco{

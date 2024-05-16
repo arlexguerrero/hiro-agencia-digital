@@ -11972,6 +11972,12 @@ textarea.form-control-lg {
   transform: translate(-50%, 0%);
   left: 50%;
 }
+@media screen and (max-width: 768px) {
+  .testimonios .owl-carousel .owl-dots {
+    bottom: -5px;
+    width: 50%;
+  }
+}
 .testimonios .owl-carousel .owl-dots span {
   width: 20px;
   height: 20px;
@@ -12113,12 +12119,14 @@ header nav .dropdown-menu {
   gap: 2rem;
   flex-wrap: wrap;
   max-width: 100%;
+  justify-content: center;
 }
 @media (max-width: 575.98px) {
   .home .servicios__card-group {
     flex-wrap: nowrap;
     overflow-x: auto;
     padding-bottom: 2rem;
+    justify-content: flex-start;
   }
 }
 .home .servicios__card-group .card {
@@ -12128,11 +12136,39 @@ header nav .dropdown-menu {
   border: none;
   flex-shrink: 0;
   display: flex;
+  gap: 0.8rem;
+  flex-direction: column;
+  min-height: 100%;
+}
+@media (max-width: 767px) {
+  .home .servicios__card-group .card {
+    width: 46%;
+  }
 }
 @media (max-width: 575.98px) {
   .home .servicios__card-group .card {
+    width: 35%;
+  }
+}
+@media (max-width: 419px) {
+  .home .servicios__card-group .card {
     width: 80%;
   }
+}
+.home .servicios__card-group .card .card-img-top {
+  border-radius: 0px;
+}
+.home .servicios__card-group .card-body {
+  text-align: start;
+  padding: 0;
+}
+.home .servicios__card-group .card-body h5 {
+  color: #49A9F5;
+}
+.home .servicios__card-group .card a {
+  color: #fff;
+  border-radius: 0;
+  font-weight: 700;
 }
 .home .testimonios {
   color: #fff;
@@ -12144,15 +12180,27 @@ header nav .dropdown-menu {
   background-repeat: no-repeat;
   padding: 2rem 3rem;
 }
+@media screen and (max-width: 767px) {
+  .home .testimonios .carousel2 {
+    padding: 2rem 1rem;
+  }
+}
 .home .testimonios .item {
   padding-top: 4rem;
+  width: fit-content;
 }
 .home .testimonios .item .comentario {
   padding: 2rem;
   border: 1px solid #D9D9D9;
   border-radius: 16px;
-  width: 380px;
+  max-width: 380px;
+  width: 100%;
   background-color: #fff;
+}
+@media screen and (max-width: 767px) {
+  .home .testimonios .item .comentario {
+    max-width: 240px;
+  }
 }
 .home .testimonios .item .comentario p {
   margin-top: 3rem;
@@ -12172,6 +12220,13 @@ header nav .dropdown-menu {
 /*=========
      pg nosotros
   ===========*/
+.nosotros {
+  background-color: #020205;
+  color: #fff;
+}
+.nosotros h3 {
+  color: #49A9F5;
+}
 .nosotros-banner {
   padding-top: 0px !important;
 }
@@ -12560,18 +12615,15 @@ p {
   font-weight: 100;
 }
 
+.divider {
+  background-color: #49A9F5;
+  height: 3px;
+  width: 100px;
+  display: block;
+}
+
 .titulo-negro {
   position: relative;
-}
-.titulo-negro::after {
-  content: "";
-  position: absolute;
-  height: 8px;
-  width: 100%;
-  top: 19px;
-  left: 0px;
-  z-index: -1;
-  background-color: #49A9F5;
 }
 
 .titulo-blanco {

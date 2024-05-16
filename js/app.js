@@ -24,13 +24,14 @@ $(document).ready(function(){
     });
 
     $('.carousel2').owlCarousel({
-        loop:true,
+    
         margin:20,
         dots: true,
         autoWidth:true,
         autoplay:true,
         autoplayTimeout:4500,
         autoplayHoverPause: true,
+      
        // Activar los dots
         responsive:{
             0:{
