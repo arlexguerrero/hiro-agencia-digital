@@ -3927,7 +3927,7 @@ textarea.form-control-lg {
   list-style: none;
 }
 .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
-  color: var(--bs-navbar-active-color);
+  color: #BCC900;
 }
 .navbar-nav .dropdown-menu {
   position: static;
@@ -12082,12 +12082,6 @@ header nav .dropdown-menu {
   font-size: 1.9rem;
   padding: 0px;
 }
-.home .divider {
-  background-color: #49A9F5;
-  height: 3px;
-  width: 100px;
-  display: block;
-}
 .home .servicios {
   background-color: #000F1B;
 }
@@ -12240,6 +12234,9 @@ header nav .dropdown-menu {
   background-position: center top;
   background-repeat: no-repeat;
 }
+.paquetes h3 {
+  color: #fff !important;
+}
 .paquetes .card {
   background-color: white;
   border: none;
@@ -12293,6 +12290,9 @@ header nav .dropdown-menu {
 /*=========
        Proyectos
     ===========*/
+.proyectos h3 {
+  color: #003E72;
+}
 .proyectos .proyectos-grid {
   background: radial-gradient(at center -20%, #003E72, #000F1B);
 }
@@ -12306,6 +12306,7 @@ header nav .dropdown-menu {
   margin-bottom: 20px;
   flex-wrap: wrap;
   padding: 10px 4px;
+  font-size: 1.2rem;
 }
 .proyectos .tab-btn {
   background-color: transparent;
@@ -12624,6 +12625,10 @@ p {
 
 .titulo-negro {
   position: relative;
+}
+
+.mkdigital h3, .dgweb h3, .modelado h3 {
+  color: #003E72;
 }
 
 .titulo-blanco {

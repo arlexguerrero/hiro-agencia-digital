@@ -59,6 +59,7 @@ $(document).ready(function(){
         autoplay:true,
         autoplayTimeout:4500,
         autoplayHoverPause: true,
+        autoWidth:true,
        // Activar los dots
         responsive:{
             0:{

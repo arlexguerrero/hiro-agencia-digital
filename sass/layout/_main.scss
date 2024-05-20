@@ -17,12 +17,7 @@
                 padding: 0px;
             }
         }
-        .divider{
-            background-color: #49A9F5;
-            height: 3px;
-            width: 100px;
-            display: block;
-        }
+        
         .servicios{
             background-color: #000F1B;
             
@@ -199,7 +194,9 @@
         background: radial-gradient(at center -20%, #003E72, #000F1B);
         background-position: center top;
         background-repeat: no-repeat;
-
+        h3{
+            color: #fff!important;
+        }
         .card{
             background-color: white;
             border: none;
@@ -266,6 +263,9 @@
 
     .proyectos{
 
+        h3{
+            color: #003E72;
+        }
         .proyectos-grid{
             background: radial-gradient(at center -20%, #003E72, #000F1B);
         }
@@ -281,6 +281,7 @@
             margin-bottom: 20px;
             flex-wrap: wrap;
             padding: 10px 4px;
+            font-size: 1.2rem;
           }
           
           .tab-btn {
