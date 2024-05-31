@@ -75,21 +75,31 @@
           <div class="d-flex justify-content-center align-items-center mb-4">
             <h3 class=" titulo-negro">Contáctanos</h3>
           </div>
-          <form>
+          <form id="contact-form" action="procesar_contacto.php" method="POST" class="form-inline">
             <div class="mb-3">
-              <label for="nombre" class="form-label">Nombre</label>
-              <input type="text" class="form-control" id="nombre" placeholder="Nombre">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" name="nombre" class="form-control" id="nombre" placeholder="Ingresa tu nombre" required>
             </div>
             <div class="mb-3">
-              <label for="email" class="form-label">Correo Electrónico</label>
-              <input type="email" class="form-control" id="email" placeholder="Correo Electrónico">
+                <label for="email" class="form-label">Correo Electrónico</label>
+                <input type="email" name="email" class="form-control" id="email" placeholder="Ingresa tu correo electrónico" required>
             </div>
             <div class="mb-3">
-              <label for="mensaje" class="form-label">Mensaje</label>
-              <textarea class="form-control" id="mensaje" rows="5" placeholder="Mensaje"></textarea>
+                <label for="telefono" class="form-label">Teléfono</label>
+                <input type="tel" name="telefono" class="form-control" id="telefono" placeholder="Ingresa tu número de teléfono" required>
             </div>
-            <button type="submit" class="btn btn-primary ">Enviar </button>
-          </form>
+            <div class="mb-3">
+                <label for="mensaje" class="form-label">Mensaje</label>
+                <textarea name="mensaje" class="form-control" id="mensaje" rows="3" placeholder="Escribe tu mensaje" required></textarea>
+            </div>
+            <div class="form-check mb-3">
+                <input class="form-check-input" type="checkbox" name="suscribirse" id="suscribirse">
+                <label class="form-check-label" for="suscribirse">
+                    Suscríbete a nuestras noticias
+                </label>
+            </div>
+            <button class="btn btn-primary" type="submit">Enviar</button>
+        </form>
           <div class="contacto-formulario-layout__form-datos">
             <h5>Información de Contacto</h5>
             <ul>
