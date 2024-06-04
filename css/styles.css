@@ -12042,11 +12042,14 @@ textarea.form-control-lg {
 
 header {
   background-color: aqua;
-  position: relative;
+  position: fixed !important;
+  top: 0px !important;
+  left: 0px !important;
+  width: 100%;
   border-bottom: 1px solid #BCC900;
+  z-index: 2000;
 }
 header .navbar-brand {
-  display: flex;
   align-items: center;
   align-content: center;
   width: 317px;
@@ -12141,7 +12144,7 @@ header nav .dropdown-menu {
 }
 @media (max-width: 575.98px) {
   .home .servicios__card-group .card {
-    width: 35%;
+    width: 85%;
   }
 }
 @media (max-width: 419px) {
@@ -12592,6 +12595,10 @@ footer .footer__redes ul li a img {
 
 .whatsapp-button:hover {
   background-color: #128c7e;
+}
+
+body {
+  position: relative;
 }
 
 img {

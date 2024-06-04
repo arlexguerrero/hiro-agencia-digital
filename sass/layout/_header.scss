@@ -1,10 +1,15 @@
 header{
     background-color: aqua;
-    position: relative;
+    position: fixed !important;
+    top: 0px!important;
+    left: 0px!important;
+    width: 100%;
     border-bottom: 1px solid #BCC900;
+    z-index: 2000;
+
+ 
     .navbar-brand{
         
-        display: flex;
         align-items: center;
         align-content: center;
         width: 317px;

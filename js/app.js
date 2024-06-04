@@ -1,23 +1,25 @@
 $(document).ready(function(){
     $('.carousel1').owlCarousel({
         loop:true,
-        dots:true,
+       
         smartSpeed:700,
         items:1,
         // navText:['<', '>'],
         responsive:{
             0:{
                 
-                nav:false
+                nav:false,
+                dots:false
             },
             600:{
               
-                nav:false
+                nav:false,
+                dots:true
             },
             1000:{
                
-                nav:true
-               
+                nav:true,
+                dots:true
                 
             }
         }
@@ -60,6 +62,7 @@ $(document).ready(function(){
         autoplayTimeout:4500,
         autoplayHoverPause: true,
         autoWidth:true,
+        
        // Activar los dots
         responsive:{
             0:{
@@ -71,9 +74,37 @@ $(document).ready(function(){
                 nav:false
             },
             1000:{
-                items:4,
+                items:5,
                 nav:true,
-                loop:true
+                loop:false
+            }
+        }
+    });
+
+    $('.owl-proyectos__web').owlCarousel({
+        loop:true,
+        margin:1,
+        dots: true,
+        responsiveClass:true,
+        autoplay:true,
+        autoplayTimeout:4500,
+        autoplayHoverPause: true,
+        autoWidth:true,
+        
+       // Activar los dots
+        responsive:{
+            0:{
+                items:1,
+                nav:false
+            },
+            600:{
+                items:3,
+                nav:false
+            },
+            1000:{
+                items:5,
+                nav:true,
+                loop:false
             }
         }
     });
