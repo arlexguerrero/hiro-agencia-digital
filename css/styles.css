@@ -12101,6 +12101,11 @@ header nav .dropdown-menu {
   font-size: 3.4rem;
   padding: 0px;
 }
+.home .nosotros h2 span {
+  background: linear-gradient(90deg, #003A7F, #006AC9, #5AB8FF);
+  -webkit-background-clip: text;
+  color: transparent;
+}
 .home .servicios {
   background-color: #000F1B;
 }

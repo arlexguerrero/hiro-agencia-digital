@@ -30,6 +30,11 @@
                 color: #fff;
                 font-size: 3.4rem;
                 padding: 0px;
+                span{
+                    background: linear-gradient(90deg, #003A7F, #006AC9, #5AB8FF);
+                    -webkit-background-clip: text;
+                    color: transparent;
+                }
             }
         }
         
