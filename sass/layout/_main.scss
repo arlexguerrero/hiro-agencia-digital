@@ -10,10 +10,25 @@
         background-color: #020205;
         
         .nosotros{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 78vh;
             color: #fff;
+            background-image: url(../img/gradado-circular.svg);
+            background-position:  bottom -30vh right -30vh;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            padding: 2rem 3rem;
+
+            @media screen and (max-width: 767px) {
+                padding: 2rem 1rem;
+            }
+            background-color: #020516;
             h2{
-                color: #49A9F5;
-                font-size: 1.9rem;
+                color: #fff;
+                font-size: 3.4rem;
                 padding: 0px;
             }
         }

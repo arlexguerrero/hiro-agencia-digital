@@ -14,12 +14,12 @@ $(document).ready(function(){
             600:{
               
                 nav:false,
-                dots:true
+                dots:false
             },
             1000:{
                
                 nav:true,
-                dots:true
+                dots:false
                 
             }
         }
